@@ -52,7 +52,6 @@ class Storage {
   static removeTask(task) {
     const tasks = Storage.getTask();
     tasks.forEach(function (e, index) {
-      // console.log(e);
       if (task === e) {
         tasks.splice(index, 1);
       }
